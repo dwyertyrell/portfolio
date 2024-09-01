@@ -1,0 +1,276 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: defaults
+*/
+
+
+
+:root {
+    --h1-color: #010a00;
+    --h2-color: rgb(12, 20, 242);
+    --a-color:  #0c2626;
+    --button-color: #fff;
+    --button-secondary-color: #2b2b2b;
+    --font-weight-heading: 700;
+
+ }
+body {
+    background-color: #e6e6e6;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: var(--h1-color);
+    font-size: 30px;
+    font-weight: var(--font-weight-heading);
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: var(--font-weight-heading);
+    color:var(--h2-color);
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: var(--font-weight-heading);
+}
+p {
+    text-align: center;
+}
+
+a {
+    color:var(--a-color);
+   
+
+}
+
+a:visited {
+    color:var(--a-color);
+}
+
+a:hover, a:focus {
+    text-decoration:none;
+}
+
+a:active {
+    color:var(--a-color);
+}
+
+button, .button {
+    border: none;
+    font-family: inherit;
+    background-color: #357b70;
+    color: var(--button-color);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    transition-duration: 0.2s;
+    transition-property: opacity;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+    opacity: 0.85;
+    cursor: pointer;
+}
+.button_secondary {
+     background-color: #e0b354;
+    color: var(--button-secondary-color);
+}
+
+.profile__portrait {
+    float: left;
+    margin-right: 40px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+
+
+
+
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    border-bottom:#1d1503 1px solid;
+}
+
+.page-header__item {
+    flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.navigation-list {
+    list-style: none;    
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin: 15px;
+}
+.navigation-list__item--active {
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    /* margin: 50px 350px;  i think this line of code is interuptting with the media query 
+    down below: pushing the grid items to the far right of the web page */
+}
+
+.grid__item {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.grid__item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.grid__item:last-child {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+@media all and (max-width: 500px) {
+    .grid {
+    grid-template-columns: 1fr;
+    }
+}
+@media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media all and (max-width: 750px) {
+    .grid {
+        grid-gap: 10px;
+    }
+    .grid__item:last-child {
+        grid-column: auto/auto;
+        grid-row: auto/auto;
+    }
+    h1 {
+        font-size: 22px;
+    }
+}
+
+ @-webkit-keyframes color-change {
+      
+        0% {
+            fill: #edc655;
+        }
+        100% {
+            fill: #f76414;
+            } 
+}
+
+ @keyframes color-change {
+      
+        0% {
+            fill: #edc655;
+        }
+        100% {
+            fill: #f76414;
+            } 
+} 
+/* 
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;   
+} */
+
+.sun {
+    -webkit-animation: 4s color-change infinite alternate linear;
+            animation: 4s color-change infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move {
+    from {
+        transform: translate(0, 50px);
+    }
+    to {
+        transform: translate(200px, 50px);
+    } 
+}
+
+@keyframes cloud-move {
+    from {
+        transform: translate(0, 50px);
+    }
+    to {
+        transform: translate(200px, 50px);
+    } 
+}
+
+.cloud-front {
+    -webkit-animation-duration: 30s;
+            animation-duration: 30s;
+    -webkit-animation-name: cloud-move;
+            animation-name: cloud-move;
+    -webkit-animation-iteration-count: infinte;
+            animation-iteration-count: infinte;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear; 
+}
+
+@-webkit-keyframes cloud-move-reverse {
+    from {
+        transform: translate(446px, 48px);        
+    }
+    to {
+        transform:translate(100px, 48px);
+    }
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        transform: translate(446px, 48px);        
+    }
+    to {
+        transform:translate(100px, 48px);
+    }
+}
+
+.cloud-back {
+    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+            animation: 34s cloud-move-reverse infinite alternate linear;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My First Website</title>
+        <link href="img/favicon-32x32.png" rel="shortcut icon">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/styles.production.css">
+        <link href="css/normalize.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+    </head>
+
+    <body>
+        <header class="page-header">
+
+            <img width="100px" height="100px" src="img/logo.jpg" alt="logo" class="page-header__item">
+            
+            <nav class="page-header__item"> 
+                <ul role="menubar" class="navigation-list" >
+                    <li role="presentation">
+                        <a role="menuitem" href="index.html " class="navigation-list__item navigation-list__item--active">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" href="about.html" aria-label="Know more about me!" class="navigation-list__item">About</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" href="contact.html" class="navigation-list__item">Contact</a>
+                    </li> 
+                    <li role="presentation">
+                        <a role=" menuitem" href="work.html" class="navigation-list__item">Work</a>
+                    </li>
+                    
+                </ul>
+            </nav>  
+        </header> 
+            
+            <h1>Contact</h1>
+
+            <div>
+                <p>15 Oxford Road</p>
+                <p>London</p>
+                <p>E3 4DT</p>
+                <p>United Kingdom</p>
+                <!-- note to self: had i not use a <p> tag for "United Kingdom" text, i would need to use a
+                <br> tag to separate it from the tel link down below. I will use as many <br> tags for as many line spaces 
+                i desire, between the two contents in my browser -->
+        
+                <a href="tel:07745839287">Telephone: 07745839287</a>
+                    <br>
+                <a href="mailto:dwyertyrell(at)gmail(dot)com">Email: dwyertyrell@gmail.com</a>
+                    <br>
+                    <br>
+                <a href="#">check out some of my code</a> 
+
+            <form action="#" method="post" id="contact form">
+                <label for="email" class="standard label">E-mail</label><br>
+                <input type="email" id="email" name="" required><br><br>
+                
+                <label for="phone" class="standard label">Telephone</label><br>
+                <input type="tel" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" name=""><br><br>
+
+                <label  for="extraspace" class="standard label">Message</label><br>
+                <textarea maxlength="240" id="extraspace" required></textarea><br>
+                
+                <button type="submit" class="button_secondary">Send Away!</button>
+                <!-- i used a more specific styling for the contact form button-
+                to practice my understanding on using class selectors which is cascading with
+                 the element selector -->
+            </form>
+
+
+            </div>
+
+            <footer class="page-footer">      
+                <p>Find me on</p>
+            <div class="social-media">
+                <img src="img/github_icon.svg" alt="Github">
+                <img src="img/twitter icon_icon.svg" alt="twitter">
+                <img src="img/linkedin_icon.svg" alt="linkedin">            
+            </div>
+        </footer>
+        <script src="js/tota11y.min.js"></script>
+    </body>
+</html>
