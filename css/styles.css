@@ -103,7 +103,14 @@ button:hover, button:focus, .button:hover, .button:focus {
     text-align: center;
 }
 
+.social-media img {
+    transition: transform 0.5s ease; 
+}
 
+.social-media img:hover {
+    transition: scale(1.5);
+    cursor:grab
+}
 
 
 .page-header {
@@ -159,6 +166,8 @@ button:hover, button:focus, .button:hover, .button:focus {
     grid-row-start: 1;
     grid-row-end: 3;
 }
+
+
 
 @media all and (max-width: 500px) {
     .grid {
