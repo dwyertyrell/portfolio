@@ -137,8 +137,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-    /* margin: 50px 350px;  i think this line of code is interuptting with the media query 
-    down below: pushing the grid items to the far right of the web page */
+
 }
 
 .grid__item {
