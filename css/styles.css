@@ -13,7 +13,7 @@ body {
     background-color: #caebf2;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
     padding: 10px 300px;
 }
@@ -24,20 +24,20 @@ body {
 
 h1 {
     color: var(--h1-color);
-    font-size: 30px;
+    font-size: 65px;
     font-weight: var(--font-weight-heading);
     text-align: center;
 
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: var(--font-weight-heading);
     color:var(--h2-color);
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: var(--font-weight-heading);
 }
 p {
