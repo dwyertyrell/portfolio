@@ -56,8 +56,6 @@ p {
 
 a {
     color:var(--a-color);
-   
-
 }
 
 a:visited {
@@ -70,6 +68,12 @@ a:hover, a:focus {
 
 a:active {
     color:var(--a-color);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #fff, #000, #fff);
 }
 
 button, .button {
@@ -114,12 +118,12 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .social-media img {
-    transition: transform 0.5s ease; 
+    transition: all .2s ease-in-out;
 }
 
 .social-media img:hover {
-    transition: scale(1.5);
-    cursor:grab
+    cursor:grab;
+    transform: scale(1.5);
 }
 
 
@@ -127,7 +131,6 @@ button:hover, button:focus, .button:hover, .button:focus {
     display: flex;
     width: 100%;
     padding: 20px;
-    border-bottom:#1d1503 1px solid;
 }
 
 .page-header__item {
@@ -150,7 +153,10 @@ button:hover, button:focus, .button:hover, .button:focus {
 .navigation-list__item--active {
     text-decoration: none;
 }
-
+.active {
+    text-decoration: none;
+    background-color: #fff;
+}
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -252,3 +258,4 @@ button:hover, button:focus, .button:hover, .button:focus {
 .cloud-back {
     animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
