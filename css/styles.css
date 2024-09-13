@@ -26,7 +26,7 @@ h1 {
     color: var(--h1-color);
     font-size: 65px;
     font-weight: var(--font-weight-heading);
-    text-align: left;
+    text-align: center;
 
 }
 
