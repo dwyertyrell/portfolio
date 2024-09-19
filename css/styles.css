@@ -103,7 +103,8 @@ button, .button {
     /* transition-duration: 0.2s;
     transition-property: opacity; */
     transition: all .2s ease-in-out;
-    /* i swapped the transition effects over to increase interactivity- didn't work */
+    /* i swapped the transition effects over to increase interactivity- didn't work
+     for the cv button  (.button class) */
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
