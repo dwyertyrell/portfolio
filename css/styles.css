@@ -1,4 +1,5 @@
-
+/* i think i need to create a flex box in the header div, to justify the gap between the 
+logo and the navigation list; and also between the individual items within that list */
 
  :root {
     --h1-color: #010a00;
