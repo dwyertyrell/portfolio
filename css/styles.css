@@ -8,7 +8,9 @@ logo and the navigation list; and also between the individual items within that 
     --button-color: #fff;
     --button-secondary-color: #2b2b2b;
     --font-weight-heading: 700;
-
+ /* change background-color to a personal preference  */
+ /* change profile-picture and also make it black and white- more aestectically pleasing  */
+ /* change logo simply uising the font family as a design */
  }
 body {
     background-color: #caebf2;
