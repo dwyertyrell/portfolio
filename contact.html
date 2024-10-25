@@ -7,8 +7,8 @@
         <link href="img/favicon-32x32.png" rel="shortcut icon">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
         <link href="css/normalize.css" type="text/css" rel="stylesheet">
-        <!-- <link rel="stylesheet" type="text/css" href="css/styles.production.css"> -->
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.production.css">
+        <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
         <meta name="viewport" content="width=device-width,initial-scale=1">
         
     </head>
@@ -16,7 +16,7 @@
     <body>
         <header class="page-header">
 
-            <a href="/index.html"><img width="100px" height="100px" src="img/logo.jpg" alt="logo" class="page-header__item"></a>
+            <h1 class="logo">TD</h1>            
             
             <nav class="page-header__item"> 
                 <ul role="menubar" class="navigation-list" >
@@ -45,10 +45,6 @@
                     <p class="paragraph-contact">London</p>
                     <p class="paragraph-contact">E3 4DT</p>
                     <p class="paragraph-contact">United Kingdom</p>
-
-                <!-- note to self: had i not use a <p> tag for "United Kingdom" text, i would need to use a
-                <br> tag to separate it from the tel link down below. I will use as many <br> tags for as many line spaces 
-                i desire, between the two contents in my browser -->
         
                 <a href="tel:07745839287">Telephone: 07745839287</a>
                     <br>
@@ -57,7 +53,6 @@
                     <br>
                 <a href="#">check out some of my code</a> 
 
-                <!-- i tried adding target="_blank" to my email form, however the link is not redirecting to a new tab -->
             <form action="#" method="post" id="contact form">
                 <label for="email" class="standard label">E-mail</label><br>
                 <input type="email" id="email" name="" required><br><br>
@@ -69,9 +64,7 @@
                 <textarea maxlength="240" id="extraspace" required></textarea><br>
                 
                 <button type="submit">Send Away!</button>
-                <!-- i used a more specific styling for the contact form button-
-                to practice my understanding on using class selectors which is cascading with
-                 the element selector -->
+               
             </form>
 
 
