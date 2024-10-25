@@ -1,0 +1,45 @@
+<div class="grid__item">
+                <h2>Mobile Web App</h2>
+                <p>Within the immersion course of CareerFoundry</p>
+                <a href="https://www.linkedin.com/in/tyrell-dwyer"> See project via LinkedIn</a>
+
+            </div>    
+            <div class="grid__item">
+                <h2>Python Project</h2>
+                <p>Within the immersion course of CareerFoundry</p>
+                <a href="https://www.linkedin.com/in/tyrell-dwyer"> See project via LinkedIn</a>
+
+                </div>
+            <div class="grid__item">
+                <h2>Cloud computing</h2>
+                <p>within the immersion course of CareerFoundry</p>
+                <a href="https://www.linkedin.com/in/tyrell-dwyer"> See project via LinkedIn</a>
+
+                </div>
+
+
+css notes: 
+ /* change background-color to a personal preference  */
+ /* change profile-picture and also make it black and white- more aestectically pleasing  */
+ /* change logo simply uising the font family as a design */
+
+ /* i think i need to create a flex box in the header div, to justify the gap between the 
+logo and the navigation list; and also between the individual items within that list */
+
+line 82 /* code below works for navigation bar AND LOGO! but not individual items.
+instead, target class should be navigation-list__item?
+also, add a specific class on logo to change its border-radius  */
+
+line 90  /* transition-duration: 0.2s;
+    transition-property: opacity; */
+        /* i swapped the transition effects over to increase interactivity- didn't work
+     for the cv button  (.button class) */
+
+line 238 /* 
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;   
+} */
