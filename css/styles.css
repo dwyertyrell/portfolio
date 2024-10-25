@@ -1,5 +1,3 @@
-/* i think i need to create a flex box in the header div, to justify the gap between the 
-logo and the navigation list; and also between the individual items within that list */
 
  :root {
     --h1-color: #010a00;
@@ -8,9 +6,7 @@ logo and the navigation list; and also between the individual items within that 
     --button-color: #fff;
     --button-secondary-color: #2b2b2b;
     --font-weight-heading: 700;
- /* change background-color to a personal preference  */
- /* change profile-picture and also make it black and white- more aestectically pleasing  */
- /* change logo simply uising the font family as a design */
+
  }
 body {
     background-color: #caebf2;
@@ -83,9 +79,7 @@ hr {
     height: 1px;
     background-image: linear-gradient(to right, #fff, #000, #fff);
 }
-/* code below works for navigation bar AND LOGO! but not individual items.
-instead, target class should be navigation-list__item?
-also, add a specific class on logo to change its border-radius  */
+
 
 .page-header__item {
     transition: all step-end;
@@ -103,11 +97,8 @@ button, .button {
     padding: 5px;
     border-radius: 3px;
     border-bottom: 2px solid rgba(0,0,0,0.3);
-    /* transition-duration: 0.2s;
-    transition-property: opacity; */
     transition: all .2s ease-in-out;
-    /* i swapped the transition effects over to increase interactivity- didn't work
-     for the cv button  (.button class) */
+
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
@@ -210,13 +201,6 @@ button:hover, button:focus, .button:hover, .button:focus {
     grid-row-end: 3;
 }
 
-/* .standard label {
-    transition: all ease-in-out 1s;
-}
-.standard label:hover {
-    transform: scale(3);
-}  do not know how to active this transition */
-
 
 @media all and (max-width: 500px) {
     .grid {
@@ -251,14 +235,7 @@ button:hover, button:focus, .button:hover, .button:focus {
             fill: #f76414;
             } 
 } 
-/* 
-.sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;   
-} */
+
 
 .sun {
     animation: 4s color-change infinite alternate linear;

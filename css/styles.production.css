@@ -6,7 +6,6 @@
 */
 
 
-
 :root {
     --h1-color: #010a00;
     --h2-color: #0c14f2;
@@ -34,7 +33,11 @@ h1 {
     font-size: 65px;
     font-weight: var(--font-weight-heading);
     text-align: center;
+    transition:all ease-in-out .2s;
+}
 
+h1:hover {
+    transform: scale(1.25);
 }
 
 h2 {
@@ -83,37 +86,44 @@ hr {
     background-image: linear-gradient(to right, #fff, #000, #fff);
 }
 
+
+.page-header__item {
+    transition: all step-end;
+}
+.page-header__item:hover {
+    transform:scale(1.25);
+}
+
 button, .button {
     border: none;
     font-family: inherit;
-    background-color: #357b70;
-    color: var(--button-color);
+    background-color: #e0b354;
+    color: var(--button-secondary-color);
     text-decoration: none;
     padding: 5px;
     border-radius: 3px;
     border-bottom: 2px solid rgba(0,0,0,0.3);
-    /* transition-duration: 0.2s;
-    transition-property: opacity; */
     transition: all .2s ease-in-out;
-    /* i swapped the transition effects over to increase interactivity- didn't work */
+
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
     /* opacity: 0.85; */
     cursor: pointer; 
-    transform: scale(7.5);
+    transform: scale(1.25);
+}
 
-}
-.button_secondary {
-     background-color: #e0b354;
-    color: var(--button-secondary-color);
-}
+
 
 .profile__portrait {
     float: left;
     margin-right: 40px;
     width: 200px;
     border-radius: 50%;
+    transition: all ease-in-out .2s;
+}
+.profile__portrait:hover {
+    transform: scale(1.25);
 }
 
 .profile {
@@ -168,8 +178,9 @@ button:hover, button:focus, .button:hover, .button:focus {
 .active {
     text-decoration: none;
     background-color: none;
-    border: 1px solid black; 
-    /* use solid to change color of the outline */
+    border: 1.5px solid black; 
+    /* i used solid to change color of the outline */
+    border-radius: 10%;
 }
 .grid {
     display: grid;
@@ -198,7 +209,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 
-
 @media all and (max-width: 500px) {
     .grid {
     grid-template-columns: 1fr;
@@ -220,6 +230,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     h1 {
         font-size: 22px;
     }
+
 }
 
  @-webkit-keyframes color-change {
@@ -241,14 +252,7 @@ button:hover, button:focus, .button:hover, .button:focus {
             fill: #f76414;
             } 
 } 
-/* 
-.sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;   
-} */
+
 
 .sun {
     -webkit-animation: 4s color-change infinite alternate linear;
