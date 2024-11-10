@@ -87,13 +87,6 @@ hr {
 }
 
 
-.page-header__item {
-    transition: all step-end;
-}
-.page-header__item:hover {
-    transform:scale(1.25);
-}
-
 button, .button {
     border: none;
     font-family: inherit;
@@ -171,7 +164,12 @@ button:hover, button:focus, .button:hover, .button:focus {
 .navigation-list li {
     display: inline-block;
     margin: 15px;
+    transition: all step-end;
 }
+.navigation-list li:hover{
+    transform:scale(1.25);
+}
+
 .navigation-list__item--active {
     text-decoration: none;
 }
@@ -200,14 +198,6 @@ button:hover, button:focus, .button:hover, .button:focus {
     transform: scale(1.05);
     cursor: pointer;
 }
-
-.grid__item:last-child {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
 
 @media all and (max-width: 500px) {
     .grid {
